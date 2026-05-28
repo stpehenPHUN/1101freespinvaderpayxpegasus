@@ -1,0 +1,568 @@
+﻿<html style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duit Now</title>
+    <link href="https://qrpayin.vaderpay.net/Content/css?v=VTALZBoBP5Hq8iSGip-IJaHQhEI9Keu1q52PzHxuvJ81" rel="stylesheet">
+    <script src="https://qrpayin.vaderpay.net/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+    <script src="../js/jquery.js"></script>
+    <link href="../css/promo-css.css" rel="stylesheet" />
+
+</head>
+
+<body class="body" style="background-color:#f2f2f2; background-image:url('../image/bg-payment.jpg'); background-position: center top;">
+    <div class="row" style="margin:0;">
+        <div class="Pegasus__ctn">
+            <div class="Pegasus__modal-wrapper" id="Pegasus-modal">
+                <div class="Pegasus__modal-ctn active" id="Pegasus__modal_1" style="background-image: url('../image/bg-pop.jpg');">
+                    <div class="Pegasus__modal-ctn_img">
+                        <img src="../image/img-ad-banner.png" alt="Pegasus banner" />
+                    </div>
+                    <div class="Pegasus__modal-ctn_wrapper-1">
+                        <img src="../image/coin-01.png" alt="coin1" class="coin1 bounce2" />
+                        <img src="../image/coin-02.png" alt="coin2" class="coin2 bounce1" />
+                        <div class="promo-head" id="promoHead">
+                            <img src="../image/Congratulations_.png" alt="congratulations">
+                            立即使用以下兑换码，领取您的 Pegasus 专属奖励！
+                        </div>
+                        <div class="promo-center">
+                            <div class="">
+                                <b>恭喜！您已成功兑换 2 个优惠兑换码。 <font class="font-red"><span class="font-red" id="promoRedeem_1">2</span> / <span class="font-red" id="promoRedeem_2">2</span></font> </b>
+                            </div>
+                            <div class="d-flex flex-justify-center fa-align-center" id="promoInput">
+                                <input type="text" id="promoCode" value="ABC0123" readonly />
+                                <button id="copyButton">
+                                    <img src="../image/icn-copy.png" alt="copy" />
+                                </button>
+                            </div>
+                            <div>
+                                优惠兑换码有效期至：
+                                <br />
+                                <b><span class="font-red" id="promoExpired">2025-00-00 00:00:00AM</span></b>
+                            </div>
+                        </div>
+                        <div class="promo-footer">
+                            <button id="Pegasus_tnc">活动条款与规则</button>
+                            <div style="background: linear-gradient(90deg, transparent, #4f2124, transparent);width: 100%;">
+                                <img src="../image/img-powerby.png" alt="powered by Pegasus" style="max-width:120px; width:100%;" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_1">
+                        <img src="../image/button-x.png" alt="button close"/>
+                    </div>
+
+                </div>
+                <div class="Pegasus__modal-ctn" id="Pegasus__modal_2">
+                    <div class="Pegasus__modal-ctn_wrapper-2">
+                        <div class="promo_term_img">
+                            <img src="../image/banner-993x360-en.jpg">
+                        </div>
+                        <button class="button-redeem" role="button">
+                            <span class="button-redeem-shadow"></span>
+                            <span class="button-redeem-edge"></span>
+                            <span id="howtoredeem" class="button-redeem-front text">
+                                兑换步骤
+                            </span>
+                        </button>
+                        <style>
+                            .button-redeem {
+                                position: relative;
+                                border: none;
+                                background: transparent;
+                                padding: 0;
+                                cursor: pointer;
+                                outline-offset: 4px;
+                                transition: filter 250ms;
+                                user-select: none;
+                                -webkit-user-select: none;
+                                touch-action: manipulation;
+                                width: 100%;
+                                margin-top: 10px;
+                            }
+
+                            .button-redeem-shadow {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 12px;
+                                background: #FFC107;
+                                will-change: transform;
+                                transform: translateY(2px);
+                                transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+                            }
+
+                            .button-redeem-edge {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 12px;
+                                background: linear-gradient(to left, #FF9800 0%, #FFC107 8%, #FFEB3B 92%, #FFC107 100%);
+                            }
+
+                            .button-redeem-front {
+                                display: block;
+                                position: relative;
+                                padding: 8px 25px;
+                                border-radius: 12px;
+                                color: #333333;
+                                background: #FFC107;
+                                will-change: transform;
+                                transform: translateY(-4px);
+                                transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+
+                            .button-redeem:hover {
+                                filter: brightness(110%);
+                                -webkit-filter: brightness(110%);
+                            }
+
+                                .button-1:hover .button-redeem-front {
+                                    transform: translateY(-6px);
+                                    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+                                }
+
+                            .button-redeem:active .button-redeem-front {
+                                transform: translateY(-2px);
+                                transition: transform 34ms;
+                            }
+
+                            .button-redeem:hover .button-redeem-shadow {
+                                transform: translateY(4px);
+                                transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+                            }
+
+                            .button-redeem:active .button-redeem-shadow {
+                                transform: translateY(1px);
+                                transition: transform 34ms;
+                            }
+
+                            .button-redeem:focus:not(:focus-visible) {
+                                outline: none;
+                            }
+                        </style>
+                        <div class="promo_term">
+                            <h4><b>VADERPAY × PEGASUS 联名送旋转活动</b></h4>
+                            <p><b>活动条款与规则</b></p>
+
+                            <ol>
+                                <li>
+                                    <b>活动概述</b>
+                                    <ul>
+                                        <li>
+                                            VADERPAY × PEGASUS 联名免费旋转活动由 <b>VADERPAY</b>（支付系统）与 <b>PEGASUS</b>（游戏商）联手举办，旨在根据玩家于活动期间内的合格存款金额，奖励符合资格的玩家免费旋转兑换码（Gift Code）。
+                                        </li>
+                                        <li>
+                                            凡参与本活动者，即表示同意并接受以下所有活动条款与条件。
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>活动期间</b>
+                                    <ul>
+                                        <li>动时间：<b>2026年6月1日 – 2026年6月7日（GMT+8）</b></li>
+                                        <li>本活动将连续进行<b>七（7）天。</b></li>
+                                        <li>主办方保留随时修改、延长、缩短、暂停或终止本活动之权利，恕不另行通知。</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>参与资格</b>
+                                    <ul>
+                                        <li>本活动开放予所有 998Bet 包网 C站注册并符合资格的玩家参与。</li>
+                                        <li>玩家必须通过官方指定活动支付渠道 VaderPay（VDPc1）进行存款。</li>
+                                        <li>玩家必须在活动期间内达到指定存款金额方可获得活动资格。</li>
+                                        <li>仅计算活动期间内成功完成的存款交易。</li>
+                                        <li>主办方员工、代理及相关合作方有权被排除于活动之外。</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>活动机制</b>
+                                    <ul>
+                                        <li>玩家将根据符合资格的存款金额获得相应的 Gift Code 奖励。</li>
+                                        <li>每位玩家每日仅限兑换一个（1）Gift Code。</li>
+                                        <li>活动资格将于每日 00:00:00（GMT+8）重置，玩家需重新完成符合资格的存款方可再次参与。</li>
+                                        <li>Gift Code 采用先到先得方式发放，并受每日限量名额约束。</li>
+                                        <li>Gift Code 必须于主办方规定的有效期限内完成兑换。</li>
+                                        <li>成功兑换后，奖励将即时发放至玩家账户。</li>
+                                        <li>每组 Gift Code 均为唯一且仅限一次性使用。</li>
+                                        <li>未领取或未使用的奖励不可累计至次日，除非主办方另有说明。</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>合格存款与奖励结构</b>
+
+                                    <table class="promo-table">
+                                        <thead>
+                                            <tr>
+                                                <th>存款金额</th>
+                                                <th>Gift Code 奖励</th>
+                                                <th>每日限量</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>RM100 – RM199</td>
+                                                <td>RM2</td>
+                                                <td>180</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM200 – RM499</td>
+                                                <td>RM5</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM500 – RM999</td>
+                                                <td>RM10</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM1000 或以上</td>
+                                                <td>RM25</td>
+                                                <td>25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <style>
+                                        .promo-table {
+                                            width: 100%;
+                                            max-width: 700px;
+                                            margin: 15px auto;
+                                            border-collapse: collapse;
+                                            overflow: hidden;
+                                            border-radius: 12px;
+                                            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+                                        }
+
+                                        .promo-table th {
+                                            background: linear-gradient(to bottom, #ffd700, #ffb300);
+                                            color: #1a1a1a;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            padding: 15px;
+                                            text-align: center;
+                                        }
+
+                                        .promo-table td {
+                                            background: #ffffff;
+                                            color: #333;
+                                            padding: 14px;
+                                            text-align: center;
+                                            border-bottom: 1px solid #e5e5e5;
+                                        }
+
+                                        .promo-table tr:nth-child(even) td {
+                                            background: #f8f8f8;
+                                        }
+
+                                        .promo-table tr:hover td {
+                                            background: #fff7d6;
+                                            transition: 0.3s;
+                                        }
+
+                                        @media (max-width: 768px) {
+                                            .promo-table th,
+                                            .promo-table td {
+                                                padding: 10px;
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    </style>
+
+                                    <ul>
+                                        <li>仅限成功且符合指定金额条件的存款交易方可获得活动资格。</li>
+                                        <li>已取消、失败、退款、拒绝或任何非成功状态之交易均不符合活动资格。</li>
+                                        <li>主办方保留审核所有交易记录及奖励资格之权利。</li>
+                                        <li>任何可疑、欺诈或滥用行为均可能导致参与资格被取消。</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>奖励使用规范</b>
+                                    <ul>
+                                        <li>Gift Code 不可转让、不可兑换、不可转换为现金，除非主办方另有说明。</li>
+                                        <li>
+                                            玩家需自行确保于 PEGASUS 游戏内正确输入 Gift Code 进行兑换。
+                                        </li>
+                                        <li>玩家可参考活动页面所附之教学视频 <a href="javascript:void(0);" id="howtoredeem2">（Demo Video）</a>以了解兑换流程。</li>
+                                        <li>已过期、无效或已使用之 Gift Code 将不获重新补发。</li>
+                                        <li>对于任何遗失、泄露、共享或未经授权使用之 Gift Code，主办方概不负责。</li>
+                                        <li>
+                                            主办方保留随时进行账户验证及交易审核之权利。
+                                            任何试图操控、滥用或破坏活动机制之行为，主办方有权采取以下措施：
+                                            <ol>
+                                                <ul>
+                                                    <li>取消奖励资格</li>
+                                                    <li>暂停账户</li>
+                                                    <li>永久取消参与当前及未来活动之资格</li>
+                                                </ul>
+                                            </ol>
+                                        </li>
+                                        <li>主办方保留随时修改、暂停或终止本活动及其条款与条件之权利，恕不另行通知。</li>
+                                        <li>主办方对于本活动之一切决定均为最终决定，所有参与者不得异议。</li>
+                                     </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_2">
+                        <img src="../image/button-x.png" alt="button close" />
+                    </div>
+                </div>
+
+                <div class="Pegasus__modal-ctn" id="Pegasus__modal_3">
+                    <div class="Pegasus__modal-ctn_wrapper-3">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides">
+                                <img src="../image/Step1.jpg" style="width:100%">
+                                <div class="step">Step 1</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step2.jpg" style="width:100%">
+                                <div class="step">Step 2</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step3.jpg" style="width:100%">
+                                <div class="step">Step 3</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step4.jpg" style="width:100%">
+                                <div class="step">Step 4</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step5.jpg" style="width:100%">
+                                <div class="step">Step 5</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step6.jpg" style="width:100%">
+                                <div class="step">Step 6</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step7.jpg" style="width:100%">
+                                <div class="step">Step 7</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step8.jpg" style="width:100%">
+                                <div class="step">Step 8</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step9.jpg" style="width:100%">
+                                <div class="step">Step 9</div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                            <span class="dot" onclick="currentSlide(7)"></span>
+                            <span class="dot" onclick="currentSlide(8)"></span>
+                            <span class="dot" onclick="currentSlide(9)"></span>
+                        </div>
+                    </div>
+                    <style>
+                        .slideshow-container {
+                            max-width: 1000px;
+                            position: relative;
+                            margin: auto;
+                        }
+
+                        .mySlides {
+                            display: none;
+                        }
+
+                        .prev, .next {
+                            cursor: pointer;
+                            position: absolute;
+                            top: 50%;
+                            width: auto;
+                            margin-top: -22px;
+                            padding: 16px;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 18px;
+                            transition: 0.6s ease;
+                            border-radius: 0 3px 3px 0;
+                            user-select: none;
+                                background: rgba(0, 0, 0, 0.8);
+                        }
+
+                        .next {
+                            right: 0;
+                            border-radius: 3px 0 0 3px;
+                        }
+
+                            .prev:hover, .next:hover {
+                                background-color: rgba(0,0,0,0.8);
+                            }
+
+                        .step {
+                            color: #f2f2f2;
+                            font-size: 15px;
+                            font-weight: bold;
+                            padding: 8px 12px;
+                            position: absolute;
+                            bottom: 8px;
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        .dot {
+                            cursor: pointer;
+                            height: 15px;
+                            width: 15px;
+                            margin: 0 2px;
+                            background-color: #bbb;
+                            border-radius: 50%;
+                            display: inline-block;
+                            transition: background-color 0.6s ease;
+                        }
+
+                            .dot.active {
+                                background-color: #c59247;
+                                transition: background-color 0.6s ease;
+                            }
+
+                        .bounce2 {
+                            animation: bounce2 2s ease infinite;
+                        }
+
+                        @keyframes bounce2 {
+                            0%, 20%, 50%, 80%, 100% {
+                                transform: translateY(0);
+                            }
+
+                            40% {
+                                transform: translateY(-30px);
+                            }
+
+                            60% {
+                                transform: translateY(-15px);
+                            }
+                        }
+
+                        .bounce1 {
+                            animation: bounce1 3s ease infinite;
+                        }
+
+                        @keyframes bounce1 {
+                            0%, 20%, 50%, 80%, 100% {
+                                transform: translateY(0);
+                            }
+
+                            40% {
+                                transform: translateY(-30px);
+                            }
+
+                            60% {
+                                transform: translateY(-15px);
+                            }
+                        }
+                    </style>
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        // Next/previous controls
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        // Thumbnail image controls
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_3">
+                        <img src="../image/button-x.png" alt="button close" />
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+        <script>
+            $('#Pegasus_tnc').on('click', function () {
+                $('#Pegasus__modal_1').removeClass('active');
+                $('#Pegasus__modal_2').addClass('active');
+            });
+            $('#howtoredeem').on('click', function () {
+                $('#Pegasus__modal_2').removeClass('active');
+                $('#Pegasus__modal_3').addClass('active');
+            });
+            $('#howtoredeem2').on('click', function () {
+                $('#Pegasus__modal_2').removeClass('active');
+                $('#Pegasus__modal_3').addClass('active');
+            });
+            $('#js-close-Pegasus_2').on('click', function () {
+                $('#Pegasus__modal_1').addClass('active');
+                $('#Pegasus__modal_2').removeClass('active');
+            });
+            $('#js-close-Pegasus_3').on('click', function () {
+                $('#Pegasus__modal_2').addClass('active');
+                $('#Pegasus__modal_3').removeClass('active');
+            });
+
+            $('#js-close-Pegasus_1').on('click', function () {
+                $('#Pegasus-modal').fadeOut('slow');
+            });
+
+            $(document).ready(function () {
+                $('#Pegasus-modal').fadeIn('slow');
+            });
+
+            $(document).ready(function () {
+                $('#copyButton').click(function () {
+                    var copyText = $('#promoCode')[0];
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand('copy');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
