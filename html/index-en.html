@@ -1,0 +1,568 @@
+﻿<html style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duit Now</title>
+    <link href="https://qrpayin.vaderpay.net/Content/css?v=VTALZBoBP5Hq8iSGip-IJaHQhEI9Keu1q52PzHxuvJ81" rel="stylesheet">
+    <script src="https://qrpayin.vaderpay.net/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+    <script src="../js/jquery.js"></script>
+    <link href="../css/promo-css.css" rel="stylesheet" />
+
+</head>
+
+<body class="body" style="background-color:#f2f2f2; background-image:url('../image/bg-payment.jpg'); background-position: center top;">
+    <div class="row" style="margin:0;">
+        <div class="Pegasus__ctn">
+            <div class="Pegasus__modal-wrapper" id="Pegasus-modal">
+                <div class="Pegasus__modal-ctn active" id="Pegasus__modal_1" style="background-image: url('../image/bg-pop.jpg');">
+                    <div class="Pegasus__modal-ctn_img">
+                        <img src="../image/img-ad-banner.png" alt="Pegasus banner" />
+                    </div>
+                    <div class="Pegasus__modal-ctn_wrapper-1">
+                        <img src="../image/coin-01.png" alt="coin1" class="coin1 bounce2" />
+                        <img src="../image/coin-02.png" alt="coin2" class="coin2 bounce1" />
+                        <div class="promo-head" id="promoHead">
+                            <img src="../image/Congratulations_.png" alt="congratulations">
+                            Claim your Pegasus reward with below code.
+                        </div>
+                        <div class="promo-center">
+                            <div class="">
+                                <b>You have <font class="font-red"><span class="font-red" id="promoRedeem_1">2</span> of <span class="font-red" id="promoRedeem_2">2</span> promo code</font> redeemed.</b>
+                            </div>
+                            <div class="d-flex flex-justify-center fa-align-center" id="promoInput">
+                                <input type="text" id="promoCode" value="ABC0123" readonly />
+                                <button id="copyButton">
+                                    <img src="../image/icn-copy.png" alt="copy" />
+                                </button>
+                            </div>
+                            <div>
+                                Promo code expired on
+                                <br />
+                                <b><span class="font-red" id="promoExpired">2025-00-00 00:00:00AM</span></b>
+                            </div>
+                        </div>
+                        <div class="promo-footer">
+                            <button id="Pegasus_tnc">Terms and Conditions Apply</button>
+                            <div style="background: linear-gradient(90deg, transparent, #4f2124, transparent);width: 100%;">
+                                <img src="../image/img-powerby.png" alt="powered by Pegasus" style="max-width:120px; width:100%;" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_1">
+                        <img src="../image/button-x.png" alt="button close"/>
+                    </div>
+
+                </div>
+                <div class="Pegasus__modal-ctn" id="Pegasus__modal_2">
+                    <div class="Pegasus__modal-ctn_wrapper-2">
+                        <div class="promo_term_img">
+                            <img src="../image/banner-993x360-en.jpg">
+                        </div>
+                        <button class="button-redeem" role="button">
+                            <span class="button-redeem-shadow"></span>
+                            <span class="button-redeem-edge"></span>
+                            <span id="howtoredeem" class="button-redeem-front text">
+                                How to Redeem?
+                            </span>
+                        </button>
+                        <style>
+                            .button-redeem {
+                                position: relative;
+                                border: none;
+                                background: transparent;
+                                padding: 0;
+                                cursor: pointer;
+                                outline-offset: 4px;
+                                transition: filter 250ms;
+                                user-select: none;
+                                -webkit-user-select: none;
+                                touch-action: manipulation;
+                                width: 100%;
+                                margin-top: 10px;
+                            }
+
+                            .button-redeem-shadow {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 12px;
+                                background: #FFC107;
+                                will-change: transform;
+                                transform: translateY(2px);
+                                transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+                            }
+
+                            .button-redeem-edge {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 12px;
+                                background: linear-gradient(to left, #FF9800 0%, #FFC107 8%, #FFEB3B 92%, #FFC107 100%);
+                            }
+
+                            .button-redeem-front {
+                                display: block;
+                                position: relative;
+                                padding: 8px 25px;
+                                border-radius: 12px;
+                                color: #333333;
+                                background: #FFC107;
+                                will-change: transform;
+                                transform: translateY(-4px);
+                                transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+
+                            .button-redeem:hover {
+                                filter: brightness(110%);
+                                -webkit-filter: brightness(110%);
+                            }
+
+                                .button-1:hover .button-redeem-front {
+                                    transform: translateY(-6px);
+                                    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+                                }
+
+                            .button-redeem:active .button-redeem-front {
+                                transform: translateY(-2px);
+                                transition: transform 34ms;
+                            }
+
+                            .button-redeem:hover .button-redeem-shadow {
+                                transform: translateY(4px);
+                                transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+                            }
+
+                            .button-redeem:active .button-redeem-shadow {
+                                transform: translateY(1px);
+                                transition: transform 34ms;
+                            }
+
+                            .button-redeem:focus:not(:focus-visible) {
+                                outline: none;
+                            }
+                        </style>
+                        <div class="promo_term">
+                            <h4><b>VADERPAY × PEGASUS Cross Over Free Spin Promo</b></h4>
+                            <p><b>Terms & Conditions</b></p>
+
+                            <ol>
+                                <li>
+                                    <b>Campaign Overview</b>
+                                    <ul>
+                                        <li>
+                                            The <b>VADERPAY × PEGASUS</b> Cross Over Free Spin Promo is jointly organized by <b>VADERPAY</b> (Payment Gateway) and <b>PEGASUS</b> (Game Provider) to reward eligible players with Free Spin Gift Codes based on qualifying deposit amounts during the campaign period.
+                                        </li>
+                                        <li>
+                                            By participating in this Campaign, players agree to be bound by the following Terms & Conditions.
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Campaign Period</b>
+                                    <ul>
+                                        <li>Promotion Period: <b>1 June 2026 – 7 June 2026 (GMT+8).</b></li>
+                                        <li>The Campaign will run for <b>seven (7) consecutive days.</b></li>
+                                        <li>The organizer reserves the right to amend, extend, shorten, suspend, or terminate the Campaign period at any time without prior notice.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Eligibility</b>
+                                    <ul>
+                                        <li>This Campaign is open to eligible registered players under all 998Bet white label B2C platforms.</li>
+                                        <li>Players must make deposits via the official campaign payment channel: VaderPay (VDPc1).</li>
+                                        <li>Players must fulfill the required deposit amount during the campaign period to qualify.</li>
+                                        <li>Only deposits made within the official campaign period will be counted.</li>
+                                        <li>Employees, agents, and affiliates of the organizer may be excluded from participation.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Campaign Mechanism</b>
+                                    <ul>
+                                        <li>Players will receive Gift Code rewards based on their qualifying deposit amount.</li>
+                                        <li>Each player is entitled to redeem one (1) Gift Code per day only.</li>
+                                        <li>Eligibility will reset daily at 00:00:00 (GMT+8). A new qualifying deposit is required for the next redemption.</li>
+                                        <li>Gift Codes are distributed on a first come, first served basis and are subject to daily quota limits.</li>
+                                        <li>Gift Codes must be entered and redeemed within the validity period stated by the organizer.</li>
+                                        <li>Rewards will be credited instantly upon successful redemption of the Gift Code.</li>
+                                        <li>Each Gift Code is unique and valid for one-time redemption only.</li>
+                                        <li>Unclaimed or unused rewards will not be carried forward unless otherwise stated by the organizer.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Qualifying Deposits & Reward Structure</b>
+
+                                    <table class="promo-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Deposit Amount</th>
+                                                <th>Gift Code Prize</th>
+                                                <th>Daily Quota</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>RM100 – RM199</td>
+                                                <td>RM2</td>
+                                                <td>180</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM200 – RM499</td>
+                                                <td>RM5</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM500 – RM999</td>
+                                                <td>RM10</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM1000 and above</td>
+                                                <td>RM25</td>
+                                                <td>25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <style>
+                                        .promo-table {
+                                            width: 100%;
+                                            max-width: 700px;
+                                            margin: 15px auto;
+                                            border-collapse: collapse;
+                                            overflow: hidden;
+                                            border-radius: 12px;
+                                            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+                                        }
+
+                                        .promo-table th {
+                                            background: linear-gradient(to bottom, #ffd700, #ffb300);
+                                            color: #1a1a1a;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            padding: 15px;
+                                            text-align: center;
+                                        }
+
+                                        .promo-table td {
+                                            background: #ffffff;
+                                            color: #333;
+                                            padding: 14px;
+                                            text-align: center;
+                                            border-bottom: 1px solid #e5e5e5;
+                                        }
+
+                                        .promo-table tr:nth-child(even) td {
+                                            background: #f8f8f8;
+                                        }
+
+                                        .promo-table tr:hover td {
+                                            background: #fff7d6;
+                                            transition: 0.3s;
+                                        }
+
+                                        @media (max-width: 768px) {
+                                            .promo-table th,
+                                            .promo-table td {
+                                                padding: 10px;
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    </style>
+
+                                    <ul>
+                                        <li>Only successful deposits that meet the qualifying amount requirement will be eligible.</li>
+                                        <li>Cancelled, failed, refunded, rejected, or unsuccessful transactions will not qualify for this Campaign.</li>
+                                        <li>The organizer reserves the right to verify all transactions before approving any reward.</li>
+                                        <li>Any form of suspicious, fraudulent, or abusive activity may result in disqualification.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Reward Fair Usage Policy</b>
+                                    <ul>
+                                        <li>Gift Codes are non-transferable, non-exchangeable, and non-convertible to cash unless otherwise stated by the organizer.</li>
+                                        <li>
+                                            Players are responsible for entering the correct Gift Code during redemption via Pegasus games.
+                                        </li>
+                                        <li>May refer to the <a href="javascript:void(0);" id="howtoredeem2"> demo video</a> as attached in TNC landing page for further information.</li>
+                                        <li>Expired, invalid, or previously redeemed Gift Codes will not be reissued.</li>
+                                        <li>The organizer shall not be responsible for any lost, leaked, shared, or unauthorized use of Gift Codes.</li>
+                                        <li>The organizer reserves the right to conduct account verification and transaction reviews at any time.</li>
+                                        <li>
+                                            Any attempt to manipulate the Campaign mechanism may result in:
+                                            <ol>
+                                                <ul>
+                                                    <li>Reward forfeiture</li>
+                                                    <li>Account suspension</li>
+                                                    <li>Permanent disqualification from current and future promotions</li>
+                                                </ul>
+                                            </ol>
+                                        </li>
+                                        <li>The organizer reserves the right to amend, suspend, or terminate this Campaign and its Terms & Conditions at any time without prior notice.</li>
+                                        <li>The organizer’s decision on all matters relating to this Campaign shall be final and binding.</li>
+                                     </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_2">
+                        <img src="../image/button-x.png" alt="button close" />
+                    </div>
+                </div>
+
+                <div class="Pegasus__modal-ctn" id="Pegasus__modal_3">
+                    <div class="Pegasus__modal-ctn_wrapper-3">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides">
+                                <img src="../image/Step1.jpg" style="width:100%">
+                                <div class="step">Step 1</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step2.jpg" style="width:100%">
+                                <div class="step">Step 2</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step3.jpg" style="width:100%">
+                                <div class="step">Step 3</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step4.jpg" style="width:100%">
+                                <div class="step">Step 4</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step5.jpg" style="width:100%">
+                                <div class="step">Step 5</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step6.jpg" style="width:100%">
+                                <div class="step">Step 6</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step7.jpg" style="width:100%">
+                                <div class="step">Step 7</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step8.jpg" style="width:100%">
+                                <div class="step">Step 8</div>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../image/Step9.jpg" style="width:100%">
+                                <div class="step">Step 9</div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                            <span class="dot" onclick="currentSlide(7)"></span>
+                            <span class="dot" onclick="currentSlide(8)"></span>
+                            <span class="dot" onclick="currentSlide(9)"></span>
+                        </div>
+                    </div>
+                    <style>
+                        .slideshow-container {
+                            max-width: 1000px;
+                            position: relative;
+                            margin: auto;
+                        }
+
+                        .mySlides {
+                            display: none;
+                        }
+
+                        .prev, .next {
+                            cursor: pointer;
+                            position: absolute;
+                            top: 50%;
+                            width: auto;
+                            margin-top: -22px;
+                            padding: 16px;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 18px;
+                            transition: 0.6s ease;
+                            border-radius: 0 3px 3px 0;
+                            user-select: none;
+                                background: rgba(0, 0, 0, 0.8);
+                        }
+
+                        .next {
+                            right: 0;
+                            border-radius: 3px 0 0 3px;
+                        }
+
+                            .prev:hover, .next:hover {
+                                background-color: rgba(0,0,0,0.8);
+                            }
+
+                        .step {
+                            color: #f2f2f2;
+                            font-size: 15px;
+                            font-weight: bold;
+                            padding: 8px 12px;
+                            position: absolute;
+                            bottom: 8px;
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        .dot {
+                            cursor: pointer;
+                            height: 15px;
+                            width: 15px;
+                            margin: 0 2px;
+                            background-color: #bbb;
+                            border-radius: 50%;
+                            display: inline-block;
+                            transition: background-color 0.6s ease;
+                        }
+
+                            .dot.active {
+                                background-color: #c59247;
+                                transition: background-color 0.6s ease;
+                            }
+
+                        .bounce2 {
+                            animation: bounce2 2s ease infinite;
+                        }
+
+                        @keyframes bounce2 {
+                            0%, 20%, 50%, 80%, 100% {
+                                transform: translateY(0);
+                            }
+
+                            40% {
+                                transform: translateY(-30px);
+                            }
+
+                            60% {
+                                transform: translateY(-15px);
+                            }
+                        }
+
+                        .bounce1 {
+                            animation: bounce1 3s ease infinite;
+                        }
+
+                        @keyframes bounce1 {
+                            0%, 20%, 50%, 80%, 100% {
+                                transform: translateY(0);
+                            }
+
+                            40% {
+                                transform: translateY(-30px);
+                            }
+
+                            60% {
+                                transform: translateY(-15px);
+                            }
+                        }
+                    </style>
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        // Next/previous controls
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        // Thumbnail image controls
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_3">
+                        <img src="../image/button-x.png" alt="button close" />
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+        <script>
+            $('#Pegasus_tnc').on('click', function () {
+                $('#Pegasus__modal_1').removeClass('active');
+                $('#Pegasus__modal_2').addClass('active');
+            });
+            $('#howtoredeem').on('click', function () {
+                $('#Pegasus__modal_2').removeClass('active');
+                $('#Pegasus__modal_3').addClass('active');
+            });
+            $('#howtoredeem2').on('click', function () {
+                $('#Pegasus__modal_2').removeClass('active');
+                $('#Pegasus__modal_3').addClass('active');
+            });
+            $('#js-close-Pegasus_2').on('click', function () {
+                $('#Pegasus__modal_1').addClass('active');
+                $('#Pegasus__modal_2').removeClass('active');
+            });
+            $('#js-close-Pegasus_3').on('click', function () {
+                $('#Pegasus__modal_2').addClass('active');
+                $('#Pegasus__modal_3').removeClass('active');
+            });
+
+            $('#js-close-Pegasus_1').on('click', function () {
+                $('#Pegasus-modal').fadeOut('slow');
+            });
+
+            $(document).ready(function () {
+                $('#Pegasus-modal').fadeIn('slow');
+            });
+
+            $(document).ready(function () {
+                $('#copyButton').click(function () {
+                    var copyText = $('#promoCode')[0];
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand('copy');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
